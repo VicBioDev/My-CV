@@ -1,0 +1,399 @@
+/* Overall Layout & Typography */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Color Scheme */
+:root {
+    --primary-color: #2c3e50; /* Dark Blue/Gray */
+    --secondary-color: #3498db; /* Accent Blue */
+    --text-color: #333;
+    --light-gray: #ecf0f1;
+    --border-color: #ddd;
+}
+
+/* Header Section */
+header {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0 0 5px 0;
+}
+
+header p {
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* Sections */
+section {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+}
+
+/* Sub-headings */
+h3 {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#contact ul li::before,
+#languages ul li::before,
+#hobbies ul li::before {
+    content: '›'; /* Different bullet for these sections */
+}
+
+#skills ul ul li::before {
+    content: '▪'; /* Sub-list bullet */
+    color: var(--primary-color);
+}
+
+#skills ul {
+    margin-bottom: 15px;
+}
+
+#skills h3 {
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Experience and Projects */
+#experience article,
+#core-projects article,
+#early-projects section article { /* Added for more specificity if needed */
+    margin-bottom: 20px;
+}
+
+#experience h3,
+#core-projects h3 { /* Company names / Project Titles */
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+#experience h4,
+#core-projects h4 { /* Job Titles / Roles */
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* For early projects, a bit smaller */
+#early-projects h3 {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+#early-projects ul > li > strong { /* Project titles within early experience */
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+#early-projects ul ul {
+    margin-top: 5px;
+    padding-left: 15px; /* Indent sub-bullets */
+}
+
+#early-projects ul ul li::before {
+    content: '-';
+    color: var(--secondary-color);
+}
+
+
+/* Project details lists */
+#core-projects ul li strong, /* e.g., "角色:", "技术栈:" */
+#early-projects ul li ul li strong {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#core-projects ul ul,
+#early-projects ul ul { /* Nested lists in projects */
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+#core-projects ul ul li::before,
+#early-projects ul ul li::before {
+    content: '›';
+}
+
+/* Paragraphs and Emphasis */
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+strong {
+    color: var(--primary-color); /* Make strong tags a bit more prominent */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+    #experience h3, #core-projects h3 {
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+    #experience h4, #core-projects h4 {
+        font-size: 1.2em;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+        display: block; /* Stack title and border */
+        text-align: center;
+        border-bottom-width: 1px; /* Thinner border for mobile */
+    }
+    section h2 span { /* If using span inside h2 for text */
+        display: block;
+    }
+
+
+    ul li {
+        padding-left: 15px; /* Adjust bullet position */
+    }
+
+    p {
+        text-align: left; /* Justify can be hard on small screens */
+    }
+
+    /* Reduce margins for smaller screens */
+    section {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Utility for print button - if added via JS */
+.download-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Print specific styles */
+@media print {
+    body {
+        font-size: 10pt;
+        background-color: #fff;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 30px; /* Retain padding for PDF, same as screen style */
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    header {
+        border-bottom: 2px solid #000; /* Print in black */
+        text-align: left;
+    }
+
+    header h1, header p, section h2, h3, h4, strong {
+        color: #000 !important; /* Ensure text is black for printing */
+    }
+     section h2 {
+        border-bottom: 1px solid #000;
+    }
+
+
+    ul li::before {
+        color: #000 !important; /* Black bullets */
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none; /* Optional: remove underline for cleaner print */
+    }
+    /* Show full URL for links in print */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    /* Avoid showing for mailto links or internal links */
+     a[href^="mailto:"]::after {
+        content: "";
+    }
+
+
+    section {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc; /* Lighter border for print sections */
+        page-break-inside: avoid; /* Try to keep sections on one page */
+    }
+    
+    article {
+        page-break-inside: avoid;
+    }
+    
+    ul {
+        page-break-inside: avoid;
+    }
+
+    .download-button, footer, .no-print { /* ensure .no-print is also hidden */
+        display: none !important; /* Don't print button or footer, use important for .no-print */
+    }
+
+    #contact ul li, #languages ul li, #hobbies ul li, #skills ul li {
+        margin-bottom: 4px; /* Reduce spacing for print */
+    }
+}

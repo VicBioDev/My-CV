@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王一帆 - CV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <button id="download-pdf-btn" class="download-button no-print">下载 PDF</button>
+    <div id="cv-container" class="container">
+    <header>
+        <h1>王一帆</h1>
+        <p>生物信息学高级专家</p>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>联系方式</h2>
+            <ul>
+                <li>电话：[Hidden for Privacy]</li>
+                <li>邮箱：<a href="mailto:wang.vic@outlook.com">wang.vic@outlook.com</a></li>
+                <li>坐标：中国上海</li>
+            </ul>
+        </section>
+
+        <section id="summary">
+            <h2>自我评价</h2>
+            <p>我是一名在生物信息学和软件开发领域具有深厚技术实力的专家，拥有超过7年的行业经验。在过去3年中，我在顿慧医疗担任技术领导角色，主导了多个核心项目的架构设计和开发实施，包括企业级生信分析平台、AI驱动的基因知识库系统、高性能测序数据处理流水线等。我的核心优势在于：</p>
+            <ul>
+                <li><strong>技术领导力</strong> - 能够从零开始设计企业级系统架构，具备全栈开发能力和团队管理经验，成功领导4人技术团队完成复杂项目。</li>
+                <li><strong>算法开发能力</strong> - 在Sanger测序突变识别算法、UMI去重性能优化、样本排布算法、多语言翻译引擎等方面有技术创新，解决了生产环境中的实际问题，相关优化显著提升了处理效率和准确性。</li>
+                <li><strong>全栈技术实力</strong> - 精通Python，拥有R、C#、JavaScript等多种语言开发经验，熟练掌握Vue、FastAPI、Docker等现代开发技术栈，具备从前端UI到后端架构的完整开发能力。</li>
+                <li><strong>AI技术应用</strong> - 在生物医学领域成功应用AI技术，实现了AI自动解读生信分析结果功能。</li>
+            </ul>
+            <p>希望在新的平台上继续发挥在生物信息学、系统架构设计和AI技术应用方面的专业优势，推动精准医疗和生物技术的发展。</p>
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <ul>
+                <li><strong>生物信息和计算生物学 - 硕士</strong>，George Mason University, 2013</li>
+                <li><strong>分子生物学、生物化学、生物信息学 - 本科</strong>，Towson University, 2010</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>核心技能</h2>
+            <section id="programming-skills">
+                <h3>编程语言与框架</h3>
+                <ul>
+                    <li>Python (FastAPI、Django、Pandas、BioPython)</li>
+                    <li>R (生物统计、数据可视化)</li>
+                    <li>C# (.NET、WPF、XAML)</li>
+                    <li>JavaScript/TypeScript (Vue 3、Node.js)</li>
+                    <li>Bash Shell 脚本</li>
+                </ul>
+            </section>
+            <section id="bioinformatics-skills">
+                <h3>生物信息学技术</h3>
+                <ul>
+                    <li>一、二代测序分析流程 (NGS/Sanger)</li>
+                    <li>基因组学、转录组学、代谢组学数据分析</li>
+                    <li>变异检测与注释 (HGVS、OncoKB)</li>
+                    <li>分子分型与生物标志物开发</li>
+                </ul>
+            </section>
+            <section id="architecture-skills">
+                <h3>软件架构与运维</h3>
+                <ul>
+                    <li>微服务架构设计</li>
+                    <li>Docker 容器化部署</li>
+                    <li>CI/CD 流水线建设</li>
+                    <li>数据库设计 (SQLite、PostgreSQL、MongoDB)</li>
+                </ul>
+            </section>
+            <section id="ai-ml-skills">
+                <h3>AI与机器学习</h3>
+                <ul>
+                    <li>大语言模型集成 (OpenAI GPT、通义千问)</li>
+                    <li>自然语言处理 (医学文本翻译)</li>
+                    <li>工作流自动化 (Dify、AI智能解读)</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="languages">
+            <h2>语言能力</h2>
+            <ul>
+                <li>中文: 母语</li>
+                <li>英文: 流利 (在美8年，技术文档写作能力)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>职业经验</h2>
+            <article>
+                <h3>上海顿慧医疗科技</h3>
+                <h4>生物信息学技术专家 | 2022.8 至今</h4>
+                <ul>
+                    <li>担任技术负责人，领导4人技术团队，负责公司核心生信产品的架构设计和技术实施</li>
+                    <li>主导设计并开发了企业级生信分析平台，集成30+种分析工具，支持多组学数据处理</li>
+                    <li>创新性地实现了AI自动解读生信分析结果功能，在行业内率先应用AI技术提升分析效率</li>
+                    <li>负责结直肠癌分子分型、基因变异检测等多个临床级产品的算法优化和性能提升</li>
+                    <li>建立了完整的DevOps流程，包括Docker容器化、CI/CD部署和质量控制体系</li>
+                </ul>
+            </article>
+            <article>
+                <h3>上海阅尔基因</h3>
+                <h4>IVD生信主管 | 2019.5 至 2022.8</h4>
+                <ul>
+                    <li>带领2~3人团队，负责公司一、二代测序试剂盒产品的配套自动化分析软件开发</li>
+                    <li>主导NGS Panel自动化分析报告软件开发，覆盖从数据处理到报告生成的完整流程</li>
+                    <li>开发Sanger测序变异识别算法和网页工具，支持临床诊断应用</li>
+                    <li>负责软件架构设计、项目管理、团队协作和IVD注册文档支持</li>
+                </ul>
+            </article>
+            <article>
+                <h3>上海基银生物</h3>
+                <h4>生物信息工程师 | 2017.1 至 2019.5</h4>
+                <ul>
+                    <li>带领2人小团队负责生物信息部日常运维和新项目开发</li>
+                    <li>参与/主导16S肠道微生物检测、二代测序分析一体机等多个产品项目</li>
+                    <li>开发GIAS全功能测序分析平台系统，支持多平台测序数据分析</li>
+                </ul>
+            </article>
+            <article>
+                <h3>环球石材</h3>
+                <h4>项目经理 | 2014.2 至 2016.7</h4>
+                <ul>
+                    <li>带领8人团队，完成13个酒店、高级住宅建设项目，发展10+新合作关系</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="core-projects">
+            <h2>核心项目经验 - 顿慧医疗 (2022.8-至今)</h2>
+            <article>
+                <h3>🚀 企业级生信分析工具平台 (2024.2-2024.12)</h3>
+                <ul>
+                    <li><strong>项目角色：</strong>技术负责人</li>
+                    <li><strong>团队规模：</strong>4人技术团队</li>
+                    <li><strong>技术栈：</strong>Vue 3 + TypeScript + FastAPI + Docker + AI集成</li>
+                    <li><strong>项目概述：</strong>主导设计并开发了一个企业级生物信息学分析平台，为科研人员提供一站式的生信数据分析和可视化服务。该平台整合了30+种常用生信分析工具，支持转录组、蛋白组、代谢组等多组学数据处理。</li>
+                    <li><strong>核心技术贡献：</strong>
+                        <ul>
+                            <li><strong>系统架构设计</strong> - 采用前后端分离的微服务架构，设计了基于YAML配置的工具动态加载机制</li>
+                            <li><strong>AI功能开发</strong> - 集成Dify工作流实现图表和数据的智能分析，实现了行业首创的AI自动解读生信分析结果功能</li>
+                            <li><strong>全栈开发</strong> - 独立完成FastAPI后端API开发和Vue 3前端界面构建</li>
+                            <li><strong>DevOps建设</strong> - 建立了完整的Docker化部署方案和CI/CD流水线</li>
+                        </ul>
+                    </li>
+                    <li><strong>技术创新：</strong>
+                        <ul>
+                            <li>创新性设计了工具标准化集成框架，新工具接入时间从1周缩短至1天</li>
+                            <li>AI智能解读准确率达到85%以上，大幅降低生信分析的技术门槛</li>
+                            <li>异步任务处理系统支持50+个分析任务并发处理</li>
+                        </ul>
+                    </li>
+                    <li><strong>项目成果：</strong>
+                        <ul>
+                            <li>分析效率相比传统工具提升80%以上</li>
+                            <li>已在多个科研机构实现私有化部署</li>
+                            <li>建立了标准化的分析流程和结果格式</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>🧬 结直肠癌分子分型自动化流水线 (2023.1-2023.8)</h3>
+                <ul>
+                    <li><strong>项目角色：</strong>核心算法开发者</li>
+                    <li><strong>技术栈：</strong>Snakemake + Docker + Python + R + UMI-tools</li>
+                    <li><strong>项目概述：</strong>开发了一套完整的结直肠癌共识分子分型(CMS)自动化分析流水线，用于临床精准医疗中的分子诊断。</li>
+                    <li><strong>核心技术突破：</strong>
+                        <ul>
+                            <li><strong>分阶段UMI去重算法优化</strong> - 独创的性能优化策略，解决了生产环境的关键瓶颈：
+                                <ul>
+                                    <li>处理时间从12-24小时缩短至1-1.5小时</li>
+                                    <li>内存需求从32GB降低至6GB</li>
+                                    <li>流程成功率从60%提升至98%</li>
+                                </ul>
+                            </li>
+                            <li><strong>工作流自动化</strong> - 基于Snakemake构建的完整分析流水线，支持从BCL到临床报告的端到端处理</li>
+                            <li><strong>容器化部署</strong> - Docker多阶段构建，确保生产环境的稳定性和可移植性</li>
+                        </ul>
+                    </li>
+                    <li><strong>业务价值：</strong>
+                        <ul>
+                            <li>每月处理200+临床样本，支持精准医疗决策</li>
+                            <li>基础设施成本降低50%，计算资源利用率提升60%</li>
+                            <li>分类准确率达到95%以上，通过多个基准数据集验证</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>🤖 AI驱动的基因知识库整理系统 (2024.3-2025.5)</h3>
+                <ul>
+                    <li><strong>项目角色：</strong>独立开发者</li>
+                    <li><strong>技术栈：</strong>Python + PySide6 + OpenAI API + 多翻译服务集成</li>
+                    <li><strong>项目概述：</strong>开发了一个专门为生物医学领域设计的AI驱动知识库整理系统，解决基因相关数据的标准化处理、多语言翻译和质量控制问题。</li>
+                    <li><strong>核心技术特色：</strong>
+                        <ul>
+                            <li><strong>多模态AI集成</strong> - 集成OpenAI GPT-4、通义千问、DeepL、Google翻译的智能降级机制</li>
+                            <li><strong>专业术语优化</strong> - 构建了医学术语知识库，实现上下文感知的专业翻译</li>
+                            <li><strong>高性能处理</strong> - 多线程并行架构，支持100+文件同时处理</li>
+                            <li><strong>现代化GUI</strong> - 基于Qt6的响应式桌面应用，支持拖拽式操作</li>
+                        </ul>
+                    </li>
+                    <li><strong>技术亮点：</strong>
+                        <ul>
+                            <li>翻译准确率达到95%以上，处理效率提升80%</li>
+                            <li>智能重试与限流处理，出错概率大大降低</li>
+                            <li>零配置部署，支持一键打包为可执行程序</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>🧪 NGS工作流自动化平台 (LibWizard) (2023.5-2024.1)</h3>
+                <ul>
+                    <li><strong>项目角色：</strong>技术负责人</li>
+                    <li><strong>技术栈：</strong>PyQt6 + FastAPI + MongoDB + 算法设计</li>
+                    <li><strong>项目概述：</strong>开发了一套全面的NGS工作流自动化平台，包含桌面GUI应用、Web服务API和核心处理工具包。</li>
+                    <li><strong>核心算法开发：</strong>
+                        <ul>
+                            <li><strong>样本排布优化算法</strong> - 根据数据量需求和硬件约束自动优化样本分布</li>
+                            <li><strong>精密加样量计算引擎</strong> - 自动计算文库稀释和混合体积，消除手工计算错误</li>
+                            <li><strong>索引冲突检测系统</strong> - 使用高级字符串匹配算法防止测序错误</li>
+                        </ul>
+                    </li>
+                    <li><strong>项目成果：</strong>
+                        <ul>
+                            <li>减少人工错误，提高混样准确性</li>
+                            <li>将建库时间从4+小时缩短至30分钟</li>
+                            <li>每次为实验室节省2-3小时的手工计算时间</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+             <article>
+                <h3>🔬 专项工具开发</h3>
+                 <ul>
+                    <li><strong>MET外显子14跳跃变异检测工具</strong>
+                        <ul>
+                            <li>开发了专门检测MET基因外显子14跳跃变异的分析工具</li>
+                            <li>基于Biopython实现局部序列比对算法，支持大型BAM文件处理</li>
+                            <li>多线程处理可将分析速度提升5-8倍</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mutalyzer3 API工具包 (mustk3)</strong>
+                        <ul>
+                            <li>独立开发基于Python的变异注释工具包，封装Mutalyzer3 RESTful API</li>
+                            <li>实现智能缓存策略</li>
+                            <li>支持批量处理10,000+变异描述，处理速度每秒50-100个变异</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="early-projects">
+            <h2>早期项目经验</h2>
+            <section id="yuer-projects">
+                <h3>阅尔基因项目经验 (2019.5-2022.8)</h3>
+                <ul>
+                    <li><strong>多个NGS试剂盒测序自动分析解读报告软件</strong>
+                        <ul>
+                            <li>使用C#和XAML开发Windows平台.NET程序前端</li>
+                            <li>Docker工具制作适合Windows运行的NGS分析流程镜像</li>
+                            <li>开发解读报告的程序逻辑和docx格式报告生成工具</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sanger分析工具和网页控制界面</strong>
+                        <ul>
+                            <li>独立开发基于一代测序峰图的变异识别算法</li>
+                            <li>基于Django开发一代测序变异、融合识别网页工具</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sanger+qPCR试剂盒产品的IVD分析软件</strong>
+                        <ul>
+                            <li>设计开发Sanger的点突变和indel识别算法</li>
+                            <li>开发qPCR的变异丰度计算模块</li>
+                            <li>使用C#开发前端用户交互界面和分析控制模块</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="jiyin-projects">
+                <h3>基银生物项目经验 (2017.1-2019.5)</h3>
+                <ul>
+                    <li><strong>GIAS测序分析平台系统</strong>
+                        <ul>
+                            <li>使用Python重写分析流程，去除操作系统依赖性</li>
+                            <li>开发了源代码和重要数据保护的加密工具</li>
+                            <li>支持全外显子、全基因组、芯片测序等多种分析类型</li>
+                        </ul>
+                    </li>
+                    <li><strong>基于16S测序的肠道菌群检测</strong>
+                        <ul>
+                            <li>参与主要分析流程开发，使用Muthor、Bash、Python</li>
+                            <li>手机端报告UI开发，使用Bootstrap、HTML、CSS、JavaScript</li>
+                        </ul>
+                    </li>
+                    <li><strong>PDF版报告系统</strong>
+                        <ul>
+                            <li>开发自动文档生成流程，使用Python和Weasyprint工具</li>
+                            <li>从NGS分析结果生成PDF版本的检测报告</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="contributions">
+            <h2>主要技术贡献</h2>
+            <ul>
+                <li><strong>算法创新</strong> - 在UMI去重、样本排布优化等关键技术点有突破性创新</li>
+                <li><strong>AI技术应用</strong> - 首次在生信领域实现AI自动解读功能，推动行业技术进步</li>
+                <li><strong>开源贡献</strong> - 多个生物信息学工具包和算法的开源贡献者</li>
+                <li><strong>技术标准化</strong> - 建立了多个企业级项目的技术标准和最佳实践</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2>兴趣爱好</h2>
+            <ul>
+                <li>摄影 - 专业级摄影技能，关注科学摄影</li>
+                <li>开源软件 - 活跃的开源社区贡献者</li>
+                <li>技术写作 - 在技术博客和期刊发表多篇文章</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>简历更新时间：2025年5月</p>
+    </footer>
+    </div>
+</body>
+</html>
